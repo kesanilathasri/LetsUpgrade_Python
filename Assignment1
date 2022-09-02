@@ -1,1 +1,10 @@
-
+# Using for loop please print all the prime numbers between 1-200 using FOR LOOP AND RANGE function
+print("ASSIGNMENT-1")
+print("The Prime Numbers between 1 - 200 are: ")
+for i in range(1,201):
+  if(i>1):
+    for a in range(2,i):
+      if (i%a==0):
+        break
+    else:
+      print(i)
