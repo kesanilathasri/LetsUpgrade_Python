@@ -1,0 +1,22 @@
+def techInfo(*args):
+	for arg in args:
+		print(arg)
+  
+print("ASSIGNMENT -2 1)Example for *ARGS in PYTHON FUNCTIONS")
+print("Trending Technologies are: ")
+techInfo('Machine Learning','Cyber Security','Full Stack Development','Advanced Excel')
+
+
+def myFav(**kwargs):
+    for item, value in kwargs.items():
+        print("%s : %s" % (item, value))
+print("ASSIGNMENT -2 2)Example for *KWARGS in PYTHON FUNCTIONS")
+print()
+foodItem=input("Enter your Favourite Food Item: ")
+place=input("Enter your Favourite Place: ")
+colour=input("Enter your Favourite Colour: ")
+festival=input("Enter your Favourite Festival: ")
+kwargs={"Food Item":foodItem,"Place":place,"Colour":colour,"Festival":festival}
+print()
+print("Your Favourite things are: ")
+myFav(**kwargs)
